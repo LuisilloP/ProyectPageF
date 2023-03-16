@@ -7,10 +7,13 @@ import { Route, Routes } from 'react-router-dom'
 import Contact from '../pages/Contact'
 import Principal from '../pages/Principal'
 import Pages from '../pages/Pages'
+// hook
+import UpTop from '../hooks/UpTop'
 const RoutesPersonalizate = (): JSX.Element => {
   return (
     <AnimatePresence>
       <HelmetProvider>
+        <UpTop />
         <Routes>
           <Route path='/' element={<Principal />} />
           <Route path='/contacto' element={<Contact />} />

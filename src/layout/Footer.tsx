@@ -1,7 +1,7 @@
 
 const Footer = (): JSX.Element => {
   return (
-    <div>Footer</div>
+    <div className=' bg-slate-800 h-20'>Footer</div>
   )
 }
 
