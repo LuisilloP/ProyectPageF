@@ -13,8 +13,14 @@ module.exports = {
         garamond: ['Garamond']
       },
       height: {
+        110: '28rem',
         128: '32rem',
-        140: '40rem'
+        140: '40rem',
+        960: '60rem'
+      },
+      minHeight:
+      {
+        1040: '66rem'
       }
     }
   },
