@@ -3,6 +3,7 @@ import PagesCard from '../components/PagesCard'
 import { ConstantsPagesCard } from '../util/constants'
 import svgResponsive from '../../public/svg/responsive.svg'
 import svgDiagram from '../../public/svg/diagram.svg'
+import svgMegaphone from '../../public/svg/megaphone.svg'
 import { IntersectionObserverHook } from '../util/intersectionObserver'
 
 const Principal = (): JSX.Element => {
@@ -21,7 +22,7 @@ const Principal = (): JSX.Element => {
           </div>
         </div>
       </div>
-      <section className='principal py-20 px-5 min-h-1040  '>
+      <section className='pt-20 px-5 min-h-880  '>
         <h1 className='font-montserrat font-bold text-3xl text-gray-700 text-center'> Conoce nuestros precios!</h1>
         <div className='flex flex-col md:flex-row py-20 container-cards  gap-10 justify-center'>
           {ConstantsPagesCard.map((card) =>
@@ -32,25 +33,27 @@ const Principal = (): JSX.Element => {
       </section>
       <section>
         <div ref={elementRef} className='bg-slate-800 min-h-110 flex flex-col p-5 md:flex-row gap-6 text-gray-200 '>
-          <div ref={elementRef} className={`${intersecting ? 'showIO' : ' hiddenIO'} flex flex-col items-center`}>
+          <div className={`${intersecting ? 'showIO' : ' hiddenIO'} flex flex-col items-center`}>
             <h1>Diseño responsivo</h1>
-            <img src={svgResponsive} className='w-40' alt='image' />
+            <img src={svgResponsive} className='w-32' alt='image' />
             <p>Que significa esto. Significa que tu sito web se puede ver y adapatar a cualquier tipo de dispositivo </p>
           </div>
-          <div ref={elementRef} className={`${intersecting ? 'showIO' : ' hiddenIO'} flex flex-col items-center`}>
+          <div className={`${intersecting ? 'showIO' : ' hiddenIO'} flex flex-col items-center`}>
             <h1>Diseño responsivo</h1>
-            <img src={svgDiagram} className='w-40' alt='image' />
+            <img src={svgDiagram} className='w-32' alt='image' />
             <p>Que significa esto. Significa que tu sito web se puede ver y adapatar a cualquier tipo de dispositivo </p>
           </div>
-          <div ref={elementRef} className={`${intersecting ? 'showIO' : ' hiddenIO'} flex flex-col items-center`}>
+          <div className={`${intersecting ? 'showIO' : ' hiddenIO'} flex flex-col items-center`}>
             <h1>Diseño responsivo</h1>
-            <img src={svgResponsive} className='w-40' alt='image' />
+            <img src={svgMegaphone} className='w-32' alt='image' />
             <p>Que significa esto. Significa que tu sito web se puede ver y adapatar a cualquier tipo de dispositivo </p>
           </div>
         </div>
       </section>
-      <section>
-        <div className='h-60' />
+      <section className='min-h-880'>
+        <div>
+          <h1>Mira algunos trabajos</h1>
+        </div>
       </section>
     </div>
   )
