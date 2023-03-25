@@ -30,4 +30,18 @@
         transition: all 1s ease-in-out;
         transform: translateY(0px);
     }
+    .inputClass{
+        @apply text-center 
+        w-full 
+        h-12 
+        text-white 
+        font-bold 
+        border-b-[0.4px] 
+        border-b-cyan-200 
+        bg-transparent 
+        outline-none 
+        outline-dashed 
+        focus:outline-white/10; 
+    }
+    
 }
